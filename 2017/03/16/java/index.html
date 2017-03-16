@@ -3,14 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Arkiv | Hexo</title>
+  <title>14. Longest Common Prefix | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="#题目描述：Write a function to find the longest common prefix string amongst an array of strings.*
+#代码：{    public class Solution {    public String longestCommonPrefix(String[] strs) {        if (strs ==">
+<meta property="og:type" content="article">
+<meta property="og:title" content="14. Longest Common Prefix">
+<meta property="og:url" content="http://yoursite.com/2017/03/16/java/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#题目描述：Write a function to find the longest common prefix string amongst an array of strings.*
+#代码：{    public class Solution {    public String longestCommonPrefix(String[] strs) {        if (strs ==">
+<meta property="og:updated_time" content="2017-03-16T10:17:52.665Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="14. Longest Common Prefix">
+<meta name="twitter:description" content="#题目描述：Write a function to find the longest common prefix string amongst an array of strings.*
+#代码：{    public class Solution {    public String longestCommonPrefix(String[] strs) {        if (strs ==">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,77 +66,69 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/03/16/question/" class="archive-article-date">
-  <time datetime="2017-03-16T10:25:29.000Z" itemprop="datePublished">Mar 16</time>
+        <section id="main"><article id="post-java" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/16/java/" class="article-date">
+  <time datetime="2017-03-16T09:24:03.000Z" itemprop="datePublished">2017-03-16</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/leetcode/">leetcode</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/16/question/">question</a>
+    <h1 class="article-title" itemprop="name">
+      14. Longest Common Prefix
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/03/16/java/" class="archive-article-date">
-  <time datetime="2017-03-16T09:24:03.000Z" itemprop="datePublished">Mar 16</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/16/java/">14. Longest Common Prefix</a>
-    </h1>
-  
+        <p>#题目描述：<br>Write a function to find the longest common prefix string amongst an array of strings.<br>*</p>
+<p>#代码：<br>{<br>    public class Solution {<br>    public String longestCommonPrefix(String[] strs) {<br>        if (strs == null | strs.length == 0) return “”;<br>        String pre = strs[0];<br>        int i = 1;<br>        while (i &lt; strs.length){<br>            while (strs[i].indexOf(pre) != 0){<br>                pre = pre.substring(0, pre.length() - 1);<br>            }<br>            i++;<br>        }<br>        return pre;<br>    }<br>}</p>
+<p>}</p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/03/16/hello-world/" class="archive-article-date">
-  <time datetime="2017-03-16T09:02:15.456Z" itemprop="datePublished">Mar 16</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/16/hello-world/">Hello World</a>
-    </h1>
-  
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/03/16/java/" data-id="cj0c92acy0001c0sb1k1aqw49" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/String/">String</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前缀/">前缀</a></li></ul>
 
-    </header>
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/03/16/question/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          question
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/03/16/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
         
