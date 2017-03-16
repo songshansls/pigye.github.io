@@ -105,22 +105,22 @@
 
 
 
-<meta name="description" content="题目描述：
+<meta name="description" content="##题目描述：
 Write a function to find the longest common prefix string amongst an array of strings.
-#代码：123456789101112131415&amp;#123;	public class Solution &amp;#123;    public String longestCommonPrefix(String[]">
+##代码：123456789101112131415public class Solution &amp;#123;    public String longestCommonPrefix(String[] strs">
 <meta property="og:type" content="article">
 <meta property="og:title" content="14. Longest Common Prefix">
 <meta property="og:url" content="http://pigye.com/2017/03/16/java/index.html">
 <meta property="og:site_name" content="Pig YE">
-<meta property="og:description" content="题目描述：
+<meta property="og:description" content="##题目描述：
 Write a function to find the longest common prefix string amongst an array of strings.
-#代码：123456789101112131415&amp;#123;	public class Solution &amp;#123;    public String longestCommonPrefix(String[]">
-<meta property="og:updated_time" content="2017-03-16T14:21:44.452Z">
+##代码：123456789101112131415public class Solution &amp;#123;    public String longestCommonPrefix(String[] strs">
+<meta property="og:updated_time" content="2017-03-16T14:34:49.882Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="14. Longest Common Prefix">
-<meta name="twitter:description" content="题目描述：
+<meta name="twitter:description" content="##题目描述：
 Write a function to find the longest common prefix string amongst an array of strings.
-#代码：123456789101112131415&amp;#123;	public class Solution &amp;#123;    public String longestCommonPrefix(String[]">
+##代码：123456789101112131415public class Solution &amp;#123;    public String longestCommonPrefix(String[] strs">
 
 
 
@@ -407,9 +407,9 @@ Write a function to find the longest common prefix string amongst an array of st
       
 
       
-        <p>题目描述：</p>
+        <p>##<strong>题目描述：</strong></p>
 <h2 id=""><a href="#" class="headerlink" title=""></a><blockquote><p>Write a function to find the longest common prefix string amongst an array of strings.</p>
-</blockquote></h2><p>#代码：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">longestCommonPrefix</span><span class="params">(String[] strs)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (strs == <span class="keyword">null</span> | strs.length == <span class="number">0</span>) <span class="keyword">return</span> <span class="string">""</span>;</div><div class="line">        String pre = strs[<span class="number">0</span>];</div><div class="line">        <span class="keyword">int</span> i = <span class="number">1</span>;</div><div class="line">        <span class="keyword">while</span> (i &lt; strs.length)&#123;</div><div class="line">            <span class="keyword">while</span> (strs[i].indexOf(pre) != <span class="number">0</span>)&#123;</div><div class="line">                pre = pre.substring(<span class="number">0</span>, pre.length() - <span class="number">1</span>);</div><div class="line">            &#125;</div><div class="line">            i++;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> pre;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure><br>}</p>
+</blockquote></h2><p>##<strong>代码：</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">longestCommonPrefix</span><span class="params">(String[] strs)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (strs == <span class="keyword">null</span> | strs.length == <span class="number">0</span>) <span class="keyword">return</span> <span class="string">""</span>;</div><div class="line">        String pre = strs[<span class="number">0</span>];</div><div class="line">        <span class="keyword">int</span> i = <span class="number">1</span>;</div><div class="line">        <span class="keyword">while</span> (i &lt; strs.length)&#123;</div><div class="line">            <span class="keyword">while</span> (strs[i].indexOf(pre) != <span class="number">0</span>)&#123;</div><div class="line">                pre = pre.substring(<span class="number">0</span>, pre.length() - <span class="number">1</span>);</div><div class="line">            &#125;</div><div class="line">            i++;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> pre;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -457,10 +457,6 @@ Write a function to find the longest common prefix string amongst an array of st
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/03/16/question/" rel="prev" title="question">
-                question <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -536,7 +532,7 @@ Write a function to find the longest common prefix string amongst an array of st
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
